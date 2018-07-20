@@ -8,8 +8,12 @@ pipeline {
     }
     stage('Build') {
       steps { 
-        sh 'mvn package' 
+        sh 'mvn package'
       }
     }
+    stage('Image') {
+      steps { 
+        sh 'buildImage.sh'
+      }
   }
 }
