@@ -1,2 +1,1 @@
-docker 
-ls -al
+ls 
